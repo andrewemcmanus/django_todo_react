@@ -1,5 +1,20 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+const toDoItems = [
+  {
+    id: 1,
+    title: 
+
+  },
+  {
+
+  },
+  {
+
+  },
+]
 
 function App() {
   return (
