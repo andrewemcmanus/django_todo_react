@@ -27,7 +27,7 @@ export default class CustomModal extends Component {
         <ModalBody>
           <Form>
             <FormGroup>
-              <Label for"todo-title">Title</Label>
+              <Label for="todo-title">Title</Label>
               <Input type="text" id="todo-title" name="title" value={this.state.activeItem.title} onChange={this.handleChange} placeholder="Enter To Do Title" />
             </FormGroup>
             <FormGroup>
@@ -43,7 +43,7 @@ export default class CustomModal extends Component {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="success" onClick={( = onSave(this.state.activeItem))}>Save</Button>
+          <Button color="success" onClick={() => onSave(this.state.activeItem)}>Save</Button>
         </ModalFooter>
       </Modal>
     );
