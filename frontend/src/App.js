@@ -69,7 +69,7 @@ class App extends Component {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
 
-  editItem = () => {
+  editItem = (item) => {
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
 
@@ -85,7 +85,7 @@ class App extends Component {
     return (
       <div className="nav nav-tabs">
         <span className={this.state.viewCompleted ? "nav-link active" : "nav-link"} onClick={() => this.displayCompleted(true)}>Complete</span>
-        <span className={this.state.viewCompleted ? "nav-link" : "nav-link active"} onclick={() => this.displayCompleted(false)}>Incomplete</span>
+        <span className={this.state.viewCompleted ? "nav-link" : "nav-link active"} onClick={() => this.displayCompleted(false)}>Incomplete</span>
       </div>
     )
   };
