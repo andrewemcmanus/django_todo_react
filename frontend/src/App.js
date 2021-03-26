@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import axios from 'axios';
 import Modal from './components/Modal';
-const SERVER_URL = "http://localhost:8000";
+const SERVER_URL = process.env.SERVER_URL;
 
 // const todoItems = [
 //   {
