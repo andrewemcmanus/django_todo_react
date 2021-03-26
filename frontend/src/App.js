@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import axios from 'axios';
 import Modal from './components/Modal';
+const SERVER_URL = "http://localhost:8000";
 
 // const todoItems = [
 //   {
@@ -57,7 +58,7 @@ class App extends Component {
   }
 
   refreshList = () => {
-    axios.get('/api/todos/').then((res) => this.setState({ todoList: res.data })).catch((err) => console.log(err))
+    axios.get(`${SERVER_URL}/api/todos/`).then((res) => this.setState({ todoList: res.data })).catch((err) => console.log(err))
   }
 
   toggle = () => {
@@ -67,16 +68,16 @@ class App extends Component {
   handleSubmit = (item) => {
     this.toggle();
     if (item.id) {
-      axios.put(`/api/todos/${item.id}/`, item).then((res) => this.refreshList());
+      axios.put(`${SERVER_URL}/api/todos/${item.id}/`, item).then((res) => this.refreshList());
       return;
     }
-    axios.post(`/api/todos/`, item).then((res) => this.refreshList());
+    axios.post(`${SERVER_URL}/api/todos/`, item).then((res) => this.refreshList());
     // alert("save" + JSON.stringify(item));
   };
 
   handleDelete = (item) => {
     // alert("delete" + JSON.stringify(item));
-    axios.delete(`/api/todos/${item.id}/`, item).then((res) => this.refreshList())
+    axios.delete(`${SERVER_URL}/api/todos/${item.id}/`, item).then((res) => this.refreshList())
   };
 
   createItem = () => {
