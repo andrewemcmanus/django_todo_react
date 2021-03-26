@@ -54,7 +54,7 @@ class App extends Component {
   toggle = () => {
     this.setState({ modal: !this.state.modal });
   };
-
+// alert fires here? Something wrong with editItem?
   handleSubmit = (item) => {
     this.toggle();
     alert("save" + JSON.stringify(item));
