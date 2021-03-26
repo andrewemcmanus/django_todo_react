@@ -3,38 +3,38 @@ import React, { Component } from 'react';
 // import './App.css';
 import Modal from './components/Modal';
 
-const todoItems = [
-  {
-    id: 1,
-    title: "Byteboard Assessment",
-    description: "2 hour, 2 part exam",
-    completed: false,
-  },
-  {
-    id: 2,
-    title: "Tutorial Apps",
-    description: "use tutorials as a springboard for making new apps",
-    completed: false,
-  },
-  {
-    id: 3,
-    title: "Leetcode",
-    description: "practice Leetcode problems",
-    completed: false,
-  },
-  {
-    id: 4,
-    title: "Cracking the Coding Interview",
-    description: "study solutions",
-    completed: false,
-  },
-  {
-    id: 5,
-    title: "Python Tutorial",
-    description: "improving Python skills",
-    completed: false,
-  },
-];
+// const todoItems = [
+//   {
+//     id: 1,
+//     title: "Byteboard Assessment",
+//     description: "2 hour, 2 part exam",
+//     completed: false,
+//   },
+//   {
+//     id: 2,
+//     title: "Tutorial Apps",
+//     description: "use tutorials as a springboard for making new apps",
+//     completed: false,
+//   },
+//   {
+//     id: 3,
+//     title: "Leetcode",
+//     description: "practice Leetcode problems",
+//     completed: false,
+//   },
+//   {
+//     id: 4,
+//     title: "Cracking the Coding Interview",
+//     description: "study solutions",
+//     completed: false,
+//   },
+//   {
+//     id: 5,
+//     title: "Python Tutorial",
+//     description: "improving Python skills",
+//     completed: false,
+//   },
+// ];
 // create *class* component for App
 class App extends Component {
   constructor(props) {
